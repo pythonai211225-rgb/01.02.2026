@@ -1,4 +1,4 @@
-#  ♦️ ❤️ ♠️ ♣️ Homework – Loops & Random Games ♦️ ❤️ ♠️ ♣️
+#  ♦️❤️♠️♣️ Homework – Loops & Random Games ♦️❤️♠️♣️
 
 ## Card Game: WAR
 
