@@ -39,7 +39,7 @@ print(random.randrange(3, 30 + 3, 3))
 
 # sample
 print(random.sample( range(1, 10), 5))
-
+print(random.sample( ["hello", "world", "python", "c++"], 2))
 
 # 1 roll a dice and print the number (1-6) using randint
 # 2 generate a random number between 20-200 using randint
