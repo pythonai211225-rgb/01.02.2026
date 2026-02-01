@@ -75,7 +75,7 @@ The goal is to get **as close as possible to 21** without going over.
 * Number cards → value is the number
 * J / Q / K → value is 10
 * A (Ace) → value is 1
-* Cards are generated using the **random card logic learned in class**
+* Use this code to generate random cards: <a href="cards.py">click here</a>
 * You do NOT need to build a full deck
 
 ### Game Setup
