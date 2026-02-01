@@ -20,7 +20,7 @@ The goal is to be the **first to reach 10 points**
   * Q (Queen)
   * J (Jack) 
   * 10, 9, 8, .... 2
-* Cards are generated using the **random card logic learned in class**
+* Use this code to generate random cards: <a href="cards.py">click here</a>
 
 ### Scoring Rules
 
