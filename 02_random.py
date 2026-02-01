@@ -44,7 +44,8 @@ print(random.sample(range(1, 10), 5))
 # 1 roll a dice and print the number (1-6) using randint
 # 2 generate a random number between 20-200 using randint
 # 3 generate 8 numbers between 10 and 20 using sample
-# 4 generate a random amount of numbers (between 5-15) of multiples of 3 between 12-48
-# 5 input 3 numbers from the user , then choose randomly 1 of the numbers
-# 6 choose a random temperature between 35-37.5 using uniform
-# 7 choose a random color between "red" "green" "blue" "orange" "white"
+# 4 generate a random amount of numbers (between 1-4) of multiples of 3 between 12-48
+# 5 choose a random color between "red" "green" "blue" "orange" "white"
+# 6 input 3 numbers from the user , then choose randomly 1 of the numbers
+# 7 choose a random temperature between 35.0-37.5 using uniform
+
