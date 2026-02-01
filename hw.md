@@ -61,7 +61,7 @@ Computer card: 9 ♣️
 Draw – no points awarded
 ```
 
-## ⭐ Bonus: ⭐ 
+## ⭐⭐ Bonus: ⭐⭐
 ## Card Game: 21 Boom 🃏
 
 ### Objective
