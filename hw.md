@@ -64,7 +64,7 @@ Draw – no points awarded
 ```
 
 ## ⭐ Bonus: ⭐ 
-## Card Game: 21 Boom (Etgar*)
+## Card Game: 21 Boom 🃏
 
 ### Objective
 
