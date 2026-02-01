@@ -1,81 +1,162 @@
-# Homework – Loops & Random
+# Homework – Loops & Random Games ♦️ ❤️ ♠️ ♣️
 
-יש לפתור באמצעות קוד **פייתון בלבד**
+Use **Python code only**
 
-## שאלה 1 – משחק 21 (21 Boom)
+## Question 1 – Card Game: WAR
 
-### מטרה
+### Objective
 
-לבנות משחק קלפים פשוט לשני שחקנים, שבו המטרה היא להגיע **כמה שיותר קרוב ל־21** מבלי לעבור אותו  
+Build a simple card game between a player and the computer  
+The goal is to be the **first to reach 10 points**  
 
-### חוקי המשחק
+### Game Rules
 
-יש **שני שחקנים**: שחקן 1 ושחקן 2  
-כל שחקן מתחיל עם **2 קלפים אקראיים**  
-ערך הקלפים:  
+* The player gets **one random card**  
+* The computer gets **one random card**  
+* Card values:
 
-  קלף מספרי – הערך שלו הוא המספר  
-  J / Q / K – ערך 10  
-  A (אס) – ערך 1 בלבד  
-יש להשתמש בקוד שנלמד בכיתה כדי **לגריל קלף אקראי** <a href="main.py">demo code </a>  
-אין להשתמש ברשימות של חפיסת קלפים מלאה  
+  * A (Ace) → highest
+  * K (King)
+  * Q (Queen)
+  * J (Jack) 
+  * 10, 9, 8, .... 2
+* Cards are generated using the **random card logic learned in class**
 
-### מהלך המשחק
+### Scoring Rules
 
-#### שלב 1 – שחקן 1
+* Player card > Computer card → Player gets **+1 point**
+* Computer card > Player card → Computer gets **+1 point**
+* Draw (same value) → **0 points** to both
 
-שחקן 1 מקבל 2 קלפים  
-לאחר מכן הוא יכול:  
-  * לבקש קלף נוסף  
-  * או לבחור לעצור  
-אם הסכום שלו:  
-  * שווה ל־21 → ניצחון מיידי  
-  * גדול מ־21 → נפסל  
+### Game Flow
 
-#### שלב 2 – שחקן 2
+* Start both scores at 0
+* Repeat rounds:
 
-* שחקן 2 משחק **רק אחרי** ששחקן 1 סיים
-* החוקים זהים לשחקן 1
+  * Deal one card to the player
+  * Deal one card to the computer
+  * Show both cards and their values
+  * Update scores according to the rules
+* The game ends when:
 
-### קביעת המנצח
+  * Player score reaches **10** → Player wins
+  * Computer score reaches **10** → Computer wins
 
-* אם אחד השחקנים נפסל – השני מנצח
-* אם שניהם לא נפסלו:
+### Example Round
 
-  * השחקן שהסכום שלו **קרוב יותר ל־21** מנצח
-  * אם יש תיקו – הכרז על תיקו
+```
+Player card: K ♠️   
+Computer card: 7 ♦️ 
 
-### תצוגה
+Player wins the round (+1 point)
+Score:
+Player: 4
+Computer: 3
+```
 
-יש להציג את הקלפים והסכומים במהלך המשחק
+### Example Draw
 
-ניתן להשתמש באייקונים של קלפים, לדוגמה:
+```
+Player card: 9 ❤️
+Computer card: 9 ♣️
+
+Draw – no points awarded
+```
+
+## Question 2 – Card Game: 21 (Blackjack Style)
+
+### Objective
+
+Build a simple two-player card game.
+The goal is to get **as close as possible to 21** without going over.
+
+### Card Rules
+
+* Number cards → value is the number
+* J / Q / K → value is 10
+* A (Ace) → value is 1
+* Cards are generated using the **random card logic learned in class**
+* You do NOT need to build a full deck
+
+### Game Setup
+
+* There are **2 players**: Player 1 and Player 2
+* Each player starts with **2 random cards**
+* Each player plays **one at a time**
+
+### Player Turn Rules
+
+During a player turn:
+
+* Show the current cards and total value
+* Ask the player to choose:
+
+```
+0 = STOP
+1 = CONTINUE
+```
+
+* If the player chooses **CONTINUE (1)** → give one more card
+* If the player chooses **STOP (0)** → end the turn
+* If total equals **21** → instant win
+* If total is **greater than 21** → player is disqualified
+
+### Game Flow
+
+#### Player 1 plays first
+
+* Player 1 keeps choosing STOP or CONTINUE until:
+
+  * they stop
+  * reach 21
+  * or are disqualified
+
+#### Player 2 plays second
+
+* Player 2 plays only **after Player 1 finishes**
+* Same rules apply
+
+### Winner Decision
+
+* If one player is disqualified → the other player wins
+* If both players are valid:
+
+  * the player **closer to 21** wins
+* If both totals are equal → draw
+
+### Card Icons (optional)
+
+You may display cards using icons:
 
 ♦️ ❤️ ♠️ ♣️
 
-### דוגמה למהלך משחק – שחקן אחד
+### Example – Game Flow (Single Player)
 
-**מצב התחלתי:**
+**Initial state:**
 
 ```
 Player 1 cards:
 7 ♦️  8 ♣️
 Total: 15
 
-STOP=0 or CONTINUE=1? 1
+Choose:
+0 = STOP
+1 = CONTINUE
 ```
 
-**השחקן בוחר: CONTINUE**
+**Player chooses: 1 (CONTINUE)**
 
 ```
 Player 1 cards:
 7 ♦️  8 ♣️  A ❤️
 Total: 16
 
-STOP=0 or CONTINUE=1? 1
+Choose:
+0 = STOP
+1 = CONTINUE
 ```
 
-**השחקן בוחר: CONTINUE**
+**Player chooses: 1 (CONTINUE)**
 
 ```
 Player 1 cards:
@@ -85,25 +166,35 @@ Total: 26
 ❌ Player 1 is disqualified
 ```
 
-### דוגמה לעצירה בזמן
+### Example – Stopping in Time
 
 ```
 Player 1 cards:
 10 ♠️  9 ♦️
 Total: 19
 
-STOP=0 or CONTINUE=1? 0
+Choose:
+0 = STOP
+1 = CONTINUE
 ```
 
-השחקן בוחר: **STOP**
+Player chooses: **0 (STOP)**
 
 ```
 Player 1 stops with total: 19
 ```
 
+### Example – Player 2
+
+```
+Player 1 cards:
+10 ❤️  10 ♠️
+Total: 20 
+20 > 19  🎯 WINNER OF THIS ROUND
+```
+
 
 בהצלחה
 
-מייל להגשה: *[pythonai211225+python8rnd@gmail.com](mailto:pythonai211225+python8rnd@gmail.com)
-
+מייל להגשה: *[pythonai211225+python7loops@gmail.com](mailto:pythonai211225+python7loops@gmail.com)
 
