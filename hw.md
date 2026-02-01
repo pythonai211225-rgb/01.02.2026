@@ -63,7 +63,7 @@ Computer card: 9 ♣️
 Draw – no points awarded
 ```
 
-## ⭐ Bonus: ⭐ Question 2 – Card Game: 21 (Blackjack Style)
+## ⭐ Bonus: ⭐ Card Game: 21 Boom Challenge 
 
 ### Objective
 
