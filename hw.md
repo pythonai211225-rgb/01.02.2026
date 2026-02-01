@@ -2,7 +2,7 @@
 
 Use **Python code only**
 
-## Question 1 – Card Game: WAR
+## Card Game: WAR
 
 ### Objective
 
@@ -63,7 +63,8 @@ Computer card: 9 ♣️
 Draw – no points awarded
 ```
 
-## ⭐ Bonus: ⭐ Card Game: 21 Boom Challenge 
+## ⭐ Bonus: ⭐ 
+## Card Game: 21 Boom (Etgar*)
 
 ### Objective
 
