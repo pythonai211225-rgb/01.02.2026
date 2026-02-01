@@ -63,7 +63,7 @@ Computer card: 9 ♣️
 Draw – no points awarded
 ```
 
-## Question 2 – Card Game: 21 (Blackjack Style)
+## ⭐ Bonus: ⭐ Question 2 – Card Game: 21 (Blackjack Style)
 
 ### Objective
 
@@ -122,12 +122,6 @@ During a player turn:
 
   * the player **closer to 21** wins
 * If both totals are equal → draw
-
-### Card Icons (optional)
-
-You may display cards using icons:
-
-♦️ ❤️ ♠️ ♣️
 
 ### Example – Game Flow (Single Player)
 
@@ -195,5 +189,5 @@ Total: 20
 
 בהצלחה
 
-מייל להגשה: *[pythonai211225+python7loops@gmail.com](mailto:pythonai211225+python7loops@gmail.com)
+מייל להגשה: *[pythonai211225+python8rnd@gmail.com](mailto:pythonai211225+python8rnd@gmail.com)
 
