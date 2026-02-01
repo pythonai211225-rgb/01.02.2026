@@ -67,7 +67,7 @@ Draw – no points awarded
 ### Objective
 
 Build a simple two-player card game.
-The goal is to get **as close as possible to 21** without going over.
+The goal is to get **as close as possible to 21** without going over  
 
 ### Card Rules
 
