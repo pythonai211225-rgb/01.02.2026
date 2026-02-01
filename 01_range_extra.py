@@ -19,8 +19,15 @@ print()
 for i in [1, -2, 5, 0, 10]:
     print(i, end = ' ')
 
-# run on all numbers from 1 to 50 jump by 3 , print all zugi numbers
-# input 2 numbers lower, higher -- print all numbers from Higher to Lower (descending)
-# *bonus: input 2 numbers 1 divider 2 number 3 , 12
+# run on all numbers from 1 to 50 jump by 3 , print all zugi numbers -- use for loop
+# input 2 numbers lower, higher -- print all numbers from Higher to Lower (descending) -- use for loop
+# *bonus: input 2 numbers 1 divider 2 number 3 , 12.
 #         use only for loop and find out how many times 3 is in 12 == 4
 #         use only for loop and + operation
+#         i.e. 5 and 18 ==> result: 3
+
+higher = 10
+lower = 5
+for i in range(higher, lower - 1, -1):
+    print(i)
+
