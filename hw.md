@@ -189,5 +189,5 @@ Total: 20
 
 בהצלחה
 
-מייל להגשה: *[pythonai211225+python8rnd@gmail.com](mailto:pythonai211225+python8rnd@gmail.com)
+מייל להגשה: [pythonai211225+python8rnd@gmail.com](mailto:pythonai211225+python8rnd@gmail.com)
 
