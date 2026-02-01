@@ -1,7 +1,5 @@
 # Homework – Loops & Random Games ♦️ ❤️ ♠️ ♣️
 
-Use **Python code only**
-
 ## Card Game: WAR
 
 ### Objective
